@@ -9,11 +9,7 @@ It contains two directories:
 1. Core_Model
 2. Data.
 
-##########
-#
-#    Core_Model
-#
-##########
+# Core_Model
 
 Core_Model contains the CMR3 code used in Cohen & Kahana (in prep). This
 code can be set to run a CMR2 version by setting beta_source equal to 0.0.
@@ -36,12 +32,7 @@ To build the CMR3 code, run the following from the command line:
 Note that this code is written for compatibility with Python3. It may be
 compatible with Python2, but it is not tested and debugged for that purpose.
 
-
-##########
-#
-#    Data
-#
-##########
+# Data
 
 Data contains 10 example sets of data files for 10 of the subjects 
 used in Cohen & Kahana (in prep). The full set of data files, for all 97

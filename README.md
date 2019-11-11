@@ -82,7 +82,7 @@ by each subject after studying each list in their pres_nos_LTP***.txt file in pr
 3. eval_files/  contains files that have the emotional valence codes 
 that correspond to each subject's presented-items.
 
-# Particle Swarm
+# ParticleSwarm
 
 This directory contains an example of how to use particle swarm code to 
 obtain best-fitting parameters for the CMR3 model when fitting it to

@@ -103,7 +103,7 @@ def get_spc_pfr(rec_lists, ll):
     spc_var = np.var(spcmat, axis=0, ddof=1)
 
     pfr_mean = np.nanmean(pfrmat, axis=0)
-    pfr_var = np.var(pfrmat, axi=0, ddof=1)
+    pfr_var = np.var(pfrmat, axis=0, ddof=1)
 
     return spc_mean, spc_var, pfr_mean, pfr_var
 

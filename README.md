@@ -13,11 +13,19 @@ It contains three directories:
 # Core_Model
 
 Core_Model contains the CMR3 code used in Cohen & Kahana (in prep). This
-code can be set to run a CMR2 version by setting beta_source equal to 0.0.
+code can be set to run a CMR2 version (Lohnas et al., 2015, Psychological Review)
+by setting beta_source equal to 0.0. Note however that this version of CMR2 
+differs from the CMR2 version in that paper in a couple ways: (1) items form
+associations with context on the current step, not the prior step; (2) simulates
+a distractor task prior to recall; (3) the inter-item similarity matrix in MCF is 
+scaled just by the parameter s, since this absorbs the (1 - gamma_cf) scalar
+during fits.
+
 It can be set to run a version of eCMR (Talmi et al., 2019, Psychological Review) 
 by setting the number of sources in the model equal to 1. Note however that
 this version of eCMR differs from the eCMR version in that paper in a couple
-ways (carries learning across multiple lists, simulates a distractor task).
+ways: (1) learning carries across multiple lists; (2) simulates a distractor task
+prior to recall.
 
 Examples of how to set the code to run CMR2 or the (adapted) eCMR are provided 
 in the code.

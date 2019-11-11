@@ -112,7 +112,11 @@ def obj_func(param_vec):
     """Define the error function that we want to minimize"""
 
     # the setup below takes in parameters for fitting the source-code
-    # enabled version of the model.
+    # enabled version of the model. 
+    
+    # NOTE: If running the CMR2 or eCMR version, you will update
+    # this parameter section and the section where you call the model accordingly.
+    # See the run_CMR3.py code in Core_Model for an example.
     param_dict = {
 
         'beta_enc': param_vec[0],
@@ -181,8 +185,8 @@ def obj_func(param_vec):
     # get the model's spc and pfr predictions:
     (this_spc, this_spc_var, this_pfr, this_pfr_var) = get_spc_pfr(cmr_recoded_output, ll)
 
-    # be careful not to divide by 0! some param sets may output 0-variance vec's.
-    # if this happens, just leave all outputs alone.
+    # Some param sets may output 0-variance vec's. We are norming by the variance
+    # in the actual data, but just to be on the safe side, set these to a nonzero constant.
     if np.nansum(this_spc_var) == 0 or np.nansum(this_pfr_var) == 0:
         print("np.nansum equaled 0")
         this_spc_var[range(len(this_spc_var))] = 1

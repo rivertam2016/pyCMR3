@@ -19,7 +19,8 @@ by setting the number of sources in the model equal to 1. Note however that
 this version of eCMR differs from the eCMR version in that paper in a couple
 ways (carries learning across multiple lists, simulates a distractor task).
 
-Examples of both these adaptations are provided in the code.
+Examples of how to set the code to run CMR2 or the (adapted) eCMR are provided 
+in the code.
 
 The CMR3 code is written in cython, which is a hybrid language that combines
 features of c and python. As such, the model code CMR3.pyx will need to 
@@ -38,8 +39,8 @@ or debugged for use with Python2.
 
 Data contains 10 example sets of data files for 10 of the subjects 
 used in Cohen & Kahana (in prep). The full set of data files, for all 97
-subjects included that paper, can be found here, under the title for the
-the Cohen & Kahana paper under the "Submitted" papers heading:
+subjects included that paper, can be found at the URL below, 
+under the "Submitted" papers heading:
 
 http://memory.psych.upenn.edu/Publications
 

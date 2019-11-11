@@ -208,7 +208,7 @@ def obj_func(param_vec):
     e2_a = np.subtract(target_pfr[:15], this_pfr[:15])
     e2_a_norm = np.divide(np.power(e2_a, 2), target_pfr_var[:15])
 
-    # this one is the lag-crp, spc, pfr, PLI, ELI, and emotional valence
+    # this error includes subsections of the spc and pfr
     chi2_error = (np.nansum(e1_a_norm)      # spc, first 10 values
                   + np.nansum(e1_b_norm)    # spc, last 3 values
                   + np.nansum(e1_c_norm)    # spc, middle 5 values

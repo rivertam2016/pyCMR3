@@ -7,7 +7,7 @@ Cohen & Kahana (in prep). Retrieved-context theory of memory in emotional disord
 It contains two directories: 
 
 1. Core_Model
-2. Data.
+2. Data
 
 # Core_Model
 

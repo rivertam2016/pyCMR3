@@ -26,6 +26,19 @@ and the source-memory capabilities of Polyn et al. (2009) and Talmi et al. (2019
 Inter-item semantic similarities are represented using Word2Vec values, contained
 for the stimuli modeled in Cohen & Kahana (submitted) in a file called w2v.txt.
 
+The CMR3 code is written in cython, which is a hybrid language that combines
+features of c and python. As such, the model code CMR3.pyx will need to 
+be compiled before it can be used. Once it has been compiled, CMR3 can
+be imported and used like any other python package.
+
+To build and compile the CMR3 code, navigate to the Core_Model directory
+and run the following from the command line:
+
+>> python3 setup_cmr3.py build_ext --inplace
+
+Note that this code is written for compatibility with Python3. It is not tested 
+or debugged for use with Python2.
+
 ## CMR2
 This code can be set to run version of CMR2 (Lohnas et al., 2015, Psychological Review)
 by setting beta_source equal to 0.0. Note however that this version of CMR2 
@@ -47,18 +60,6 @@ prior to recall.
 Examples of how to set the code to run CMR2 or the (adapted) eCMR are provided 
 in the code.
 
-The CMR3 code is written in cython, which is a hybrid language that combines
-features of c and python. As such, the model code CMR3.pyx will need to 
-be compiled before it can be used. Once it has been compiled, CMR3 can
-be imported and used like any other python package.
-
-To build and compile the CMR3 code, navigate to the Core_Model directory
-and run the following from the command line:
-
->> python3 setup_cmr3.py build_ext --inplace
-
-Note that this code is written for compatibility with Python3. It is not tested 
-or debugged for use with Python2.
 
 # Data
 

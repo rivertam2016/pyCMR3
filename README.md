@@ -25,12 +25,13 @@ features of c and python. As such, the model code CMR3.pyx will need to
 be compiled before it can be used. Once it has been compiled, CMR3 can
 be imported and used like any other python package.
 
-To build the CMR3 code, run the following from the command line:
+To build and compile the CMR3 code, navigate to the Core_Model directory
+and run the following from the command line:
 
 >> python3 setup_cmr3.py build_ext --inplace
 
-Note that this code is written for compatibility with Python3. It may be
-compatible with Python2, but it is not tested and debugged for that purpose.
+Note that this code is written for compatibility with Python3. It is not tested 
+or debugged for use with Python2.
 
 # Data
 

@@ -12,8 +12,20 @@ It contains three directories:
 
 # Core_Model
 
-Core_Model contains the CMR3 code used in Cohen & Kahana (in prep). This
-code can be set to run a CMR2 version (Lohnas et al., 2015, Psychological Review)
+Core_Model contains the CMR3 code used in Cohen & Kahana (in prep). CMR3 is a
+retrieved-context model in which items form associations with contexts present
+during study. The context present prior to recall cues retrieval of items 
+whose associated contexts during study are a close match to the current 
+retrieval context.
+
+CMR3 represents items and contexts as having negative, positive, neutral, or
+mixed emotional states. CMR3 implements the multilist capabilities of CMR2
+and the source-memory capabilities of Polyn et al. (2009) and Talmi et al. (2019).
+Inter-item semantic similarities are represented using Word2Vec values, contained
+for the stimuli modeled in Cohen & Kahana (submitted) in a file called w2v.txt.
+
+## CMR2
+This code can be set to run version of CMR2 (Lohnas et al., 2015, Psychological Review)
 by setting beta_source equal to 0.0. Note however that this version of CMR2 
 differs from the CMR2 version in that paper in a couple ways: (1) items form
 associations with context on the current step, not the prior step; (2) simulates
@@ -21,9 +33,12 @@ a distractor task prior to recall; (3) the inter-item similarity matrix in MCF i
 scaled just by the parameter s, since this absorbs the (1 - gamma_cf) scalar
 during fits.
 
-It can be set to run a version of eCMR (Talmi et al., 2019, Psychological Review) 
-by setting the number of sources in the model equal to 1. Note however that
-this version of eCMR differs from the eCMR version in that paper in a couple
+## eCMR
+This code can be set to run a version of eCMR (Talmi et al., 2019, Psychological Review) 
+by setting the number of sources in the model equal to 1, and by setting 
+beta_source equal to a nonzero, positive value equal to or greater than 1.0. 
+
+Note however that this version of eCMR differs from the eCMR version in that paper in a couple
 ways: (1) learning carries across multiple lists; (2) simulates a distractor task
 prior to recall.
 

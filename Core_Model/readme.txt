@@ -37,8 +37,4 @@ CMR3 paper (Cohen & Kahana, in prep).
 
 Set the appropriate model version at lines 349-351 equal to True.
 
-4.  For aggregate analyses, as in Simulation 1:
-
-To graph the aggregate results across each model-simulated dataset,
-follow the procedures listed in Sim1_EmotionalClusteringEffect,
-in the Graphing_Files directory.
+4.  Run the code to graph model-simulated output for the given subject.

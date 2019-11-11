@@ -4,10 +4,11 @@ This project hosts the code developed for:
 
 Cohen & Kahana (in prep). Retrieved-context theory of memory in emotional disorders.
 
-It contains two directories: 
+It contains three directories: 
 
 1. Core_Model
 2. Data
+3. ParticleSwarm
 
 # Core_Model
 
@@ -53,3 +54,16 @@ by each subject after studying each list in their pres_nos_LTP***.txt file in pr
 
 3. eval_files/  contains files that have the emotional valence codes 
 that correspond to each subject's presented-items.
+
+# Particle Swarm
+
+This directory contains an example of how to use particle swarm code to 
+obtain best-fitting parameters for the CMR3 model when fitting it to
+graphs from behavioral analyses. 
+
+This code uses the pyswarm package for particle swarm optimization, which
+I have adapted so that it can be distributed over cores on a cluster using
+the lock files method. 
+
+The example code shows how to fit the serial position curve (SPC) 
+and the probability of first recall (PFR).

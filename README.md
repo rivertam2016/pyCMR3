@@ -18,6 +18,8 @@ during study. The context present prior to recall cues retrieval of items
 whose associated contexts during study are a close match to the current 
 retrieval context.
 
+## CMR3
+
 CMR3 represents items and contexts as having negative, positive, neutral, or
 mixed emotional states. CMR3 implements the multilist capabilities of CMR2
 and the source-memory capabilities of Polyn et al. (2009) and Talmi et al. (2019).

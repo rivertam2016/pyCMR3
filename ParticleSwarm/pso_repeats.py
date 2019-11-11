@@ -939,13 +939,10 @@ def main():
 
             print("I started running ", subject)
 
-            # set subject ID
-            subj_id = subject
-
             # Set paths to where presented, recalled, and source-info files are located
             data_path = root_path + '/pres_files/pres_nos_' + subject + '.txt'
             source_info_path = root_path+'eval_files/eval_codes_'+subject+'.txt'
-            rec_path = root_path + '/rec_files/rec_nos_' + subj_id + '.txt'
+            rec_path = root_path + '/rec_files/rec_nos_' + subject + '.txt'
 
             # load presented items and recalled items
             data_pres = np.loadtxt(data_path, delimiter=',')
@@ -990,7 +987,7 @@ def main():
             # change working directory to the new folder
             os.chdir(new_dir)
 
-            # define global subject ID
+            # define global subject ID for use in the particle swarm function.
             subj_id = subject
 
             start_time = time.time()

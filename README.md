@@ -45,11 +45,11 @@ http://memory.psych.upenn.edu/Publications
 Each subject has three associated files, each located in one of three
 directories: pres_files, rec_files, and eval_files. 
 
-The pres_files/ directory contains the lists of items that were presented to each
+1. pres_files/  contains the lists of items that were presented to each
 subject. 
 
-The rec_files/ directory contains the lists of items that were recalled
+2. rec_files/  contains the lists of items that were recalled
 by each subject after studying each list in their pres_nos_LTP***.txt file in pres_files.
 
-The eval_files/ directory contains files that have the emotional valence codes 
+3. eval_files/  contains files that have the emotional valence codes 
 that correspond to each subject's presented-items.
